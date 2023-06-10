@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./imagenes/logo.png" alt="Logo de Alura" id="logo">
+    </header>
+
+    <main>
+        <section>
+            <textarea class="ingreso_texto" placeholder="Ingrese aqui el texto" autofocus cols="auto" rows="auto"></textarea>
+            <h6 class="informacion">Solo usa letras minusculas y sin acentos.</h6>
+            <div class="botones">
+                <button class="boton_encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="boton_desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section>
+            <textarea class="mensaje" cols="auto" rows="auto" disabled></textarea>
+            <button class="limpiar" onclick="limpiar()"><img class="girar" src="./imagenes/girar.png" alt=""></button>
+            <div class="botones botones_copiar">
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4>&copy Joselyn-tech</h4>
+        <!-- <img src="assets/1675821787726.png" class="copy"> -->
+        <div class="redes">
+            <a href="https://github.com/Joselyn-tech" target="_blank" rel="noopener noreferrer"><img class= "Git" src="./imagenes/logogithub.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/joselyn-diana-gutierrez-recillas-b93716200/" target="_blank" rel="noopener noreferrer"><img class= "Linkedin" src="./imagenes/logolinkedin.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
